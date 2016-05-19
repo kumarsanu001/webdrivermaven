@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 public class LoginTest {
 
 	public static WebDriver driver;
+	//abhishek bhai
 	@BeforeSuite
 	public void setup()
 	{
@@ -23,6 +24,7 @@ public class LoginTest {
 		driver.get("http://www.gmail.com");
 		driver.findElement(By.id("Email")).sendKeys("pageobjectmodeltesting@gmail.com");
 		driver.findElement(By.id("next")).click();
+		driver.findElement(By.id("dd"));
 		
 	}
 	@AfterSuite
